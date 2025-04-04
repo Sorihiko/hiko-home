@@ -1,0 +1,67 @@
+.menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-bg {
+    pointer-events: none;
+    user-select: none;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    /*width: auto;*/
+    /*height: auto;*/
+    /*max-width: 100vw;*/
+    /*max-height: 100vh;*/
+}
+
+.menu-title {
+    position: absolute;
+    top: 85px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transform: scale(0.95);
+    transform-origin: top right;
+    user-select: none;
+    pointer-events: none;
+}
+
+.menu-options {
+    position: absolute;
+    top: 35%;
+    right: 7%;
+    transform: scale(0.95);
+}
+
+.fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    animation: fadeOut 5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    pointer-events: none;
+    user-select: none;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

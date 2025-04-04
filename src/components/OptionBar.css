@@ -1,0 +1,25 @@
+.option-bar-wrapper {
+    position: relative;
+}
+
+.option-bar-bg img {
+    pointer-events: none;
+    user-select: none;
+    display: block;
+    mix-blend-mode: overlay;
+}
+
+.option-bar-bg img:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.option-bar-content {
+    top: 10%;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

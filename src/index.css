@@ -1,0 +1,6 @@
+html body {
+    cursor: url("./assets/images/cursor/mcur00.png") 0 32, auto;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}

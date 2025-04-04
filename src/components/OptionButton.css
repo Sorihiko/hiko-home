@@ -1,0 +1,32 @@
+.option-button-wrapper {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.option-button {
+    user-select: none;
+    height: 50px;
+    width: 100%;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 32px;
+    text-align: center;
+    color: #57747a;
+    letter-spacing: 4px;
+}
+
+.option-button:hover {
+    color: #ffffff;
+    background: linear-gradient(
+            to right,
+            transparent 0%,
+            #6bdee9 50%,
+            transparent 100%
+    );
+}
+
+
+@font-face {
+    font-family: "Comic Sans MS";
+    src: url("../assets/fonts/Comic Sans MS.ttf") format("truetype");
+}
